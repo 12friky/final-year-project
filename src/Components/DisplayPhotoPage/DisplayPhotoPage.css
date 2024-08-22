@@ -1,0 +1,69 @@
+.display-photo-page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.photo-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.captured-image {
+    width: 100%;
+    height: 80vh;
+    display: block;
+    position: relative;
+}
+
+.scanner-line {
+    position: absolute;
+    top: -4px; /* Positioned at the top of the image */
+    left: 0;
+    width: 100%;
+    height: 4px; /* Thickness of the line */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+    animation: scan 2s  infinite; /* Continuous animation */
+}
+
+@keyframes scan {
+    0% {
+        top: -4px;
+    }
+    50% {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    100% {
+        below: calc(100% + 10px);
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
