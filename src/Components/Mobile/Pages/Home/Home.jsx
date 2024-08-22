@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import { FaSearch, FaPlus, FaBarcode, FaQrcode, FaLeaf, FaSeedling, FaBell } from 'react-icons/fa';
 import Backyard from '../../../../images/Backyard.png'
-import Icon from '../../../../images/Icon1.png'
+import Icon from '../../../../images/icon1.png'
 import LivingRoom from '../../../../images/Living room.png'
 import Kitchen from '../../../../images/Kitchen.png'
 import Aloe1 from '../../../../images/aloe-vera2.png'
