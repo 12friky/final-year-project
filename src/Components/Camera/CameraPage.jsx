@@ -65,9 +65,9 @@ const CameraPage = () => {
                 style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
             ></video>
             <div className="camera-controls">
-                <FaCamera className="icon" onClick={capturePhoto} />
-                <FaSync className="icon rotate-icon" onClick={toggleCamera} />
-                <FaUpload className="icon" onClick={handleUploadClick} />
+                <FaCamera className="icons" onClick={capturePhoto} />
+                <FaSync className="icons" onClick={toggleCamera} />
+                <FaUpload className="icons" onClick={handleUploadClick} />
                 <input
                     type="file"
                     accept="image/*"

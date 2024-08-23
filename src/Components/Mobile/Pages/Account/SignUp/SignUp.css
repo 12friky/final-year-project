@@ -1,0 +1,106 @@
+.signup-container-unique {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.signup-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.signup-logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.signup-upload-container {
+    position: relative;
+}
+
+.signup-image-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+}
+
+.signup-profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signup-upload-input {
+    display: none;
+}
+
+.signup-form-unique {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width for form */
+    max-width: 400px; /* Set a max-width for the input container */
+}
+
+.signup-form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.signup-form-group input {
+    padding: 10px 10px 10px 40px; /* Add padding for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.signup-form-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+}
+
+.signup-form-group input::placeholder {
+    color: #aaa;
+}
+
+.signup-checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-save-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%; /* Ensure button is the full width of the container */
+}
+
+.signup-save-btn:hover {
+    background-color: #45a049;
+}
+
+.alreadyAccount
+{
+    color: #45a049;
+    font-weight: bold;
+}

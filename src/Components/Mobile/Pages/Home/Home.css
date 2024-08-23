@@ -1,4 +1,5 @@
-.home-container {
+.home-container
+ {
     padding: 20px;
     background-color: #f8f9fa;
   }
@@ -13,9 +14,10 @@
     font-size: 24px;
   }
   
-  .icons {
+  .more-icons {
     display: flex;
-    gap: 15px;
+    gap: 18px;
+    align-items: center;
   }
   .icon1{
     background-color:#EEF7E8;
@@ -42,6 +44,11 @@
   }
   
   
+  .search-icon {
+    font-size: 20px;
+    color: gray;
+  }
+
   .icon {
     font-size: 20px;
     color: gray;
@@ -63,11 +70,11 @@
     gap:1em;
   }
   
-  .section {
+  .sectionBox {
     margin-bottom: 20px;
   }
   
-  .section-header {
+  .section-header1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,6 +123,7 @@
     display: flex;
     flex-direction: column;
     align-items:flex-start;
+    gap: 2rem;
   }
   .plant-health{
     color: #32a852;
@@ -128,7 +136,7 @@
     object-fit: cover;
   }
   
-  .categories {
+  .categoriesBox {
     display: flex;
     flex-direction: column;
     gap: 15px; /* Space between rows */

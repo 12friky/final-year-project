@@ -1,0 +1,50 @@
+.saved-page {
+    padding: 20px;
+    background-color:  #f8f9fa;
+    height: 100vh;
+}
+
+.saved-item {
+    display: flex;
+    align-items: center; /* Center the items vertically */
+    margin-bottom: 20px; /* Space between saved items */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the item */
+    background-color: white;
+    /* gap: 1rem; */
+    justify-content: space-between;
+}
+
+.saved-image {
+    width: 80px; /* Set image width */
+    height: 80px; /* Set image height */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.saved-info {
+    display: flex;
+    flex-direction: column; 
+}
+
+.saved-name {
+    margin: 0; /* Remove default margin */
+    font-size: 20px; /* Font size for the name */
+    color: rgb(0, 0, 0); /* Text color */
+}
+
+.plant-condition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plant-condition p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.saved-location {
+    margin: 5px 0 0; /* Margin for the location */
+    color: #aaa; /* Lighter color for the location */
+}

@@ -1,0 +1,144 @@
+ .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;+ */
+    /* background-color: #f0f0f0; Light gray background */
+    /* padding: 20px; */
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+    max-width: 400px;
+    width: 100%;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 0; /* Align logo to the left */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+    text-align: center; /* Keep heading centered */
+  }
+  .Prompt{
+    color: #999;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .input-group input {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    color: #666;
+  }
+
+ .input-icons{
+  /* left: 10px; */
+    color: #666;
+    font-size: 15px;
+ }
+  
+  .input-with-icon input {
+    padding-left: 40px; /* Adjust the padding to make room for the icon */
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #009d2f; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  .create-one
+  {
+    color: green;
+    text-decoration: none;
+  }
+  
+  
+  
+  .link-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+  
+  .link-group a {
+    color: #004aad;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  
+
+  
+  .error-message {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb; /* Light red border */
+    border-radius: 5px;
+    text-align: center;
+    position: absolute; /* Position it at the top */
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    width: 90%; /* Adjust width if needed */
+    z-index: 1000; /* Ensure it's on top */
+  }
+  
+
+  .loading-spinner {
+    border: 2px solid #f3f3f3; /* Light grey */
+    border-top: 2px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite; /* Spin animation */
+    display: inline-block; /* Inline block to align with text */
+    margin-right: 5px; /* Space between spinner and text */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+   

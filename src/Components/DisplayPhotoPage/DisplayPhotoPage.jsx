@@ -14,7 +14,7 @@ const DisplayPhotoPage = () => {
 
     const handleScan = () => {
         setScanning(true);
-        setTimeout(() => setScanning(false), 3000); // Scan animation lasts 3 seconds
+        setTimeout(() => setScanning(false), 100000); // Scan animation lasts 3 seconds
     };
 
     return (

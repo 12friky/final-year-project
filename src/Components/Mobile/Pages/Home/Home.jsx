@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { FaSearch, FaPlus, FaBarcode, FaQrcode, FaLeaf, FaSeedling, FaBell } from 'react-icons/fa';
 import Backyard from '../../../../images/Backyard.png'
@@ -18,15 +18,18 @@ const Home = () => {
     const startCamera = () => {
         navigate('/camera');
     };
+    const navToSearch = () => {
+        navigate('/search');
+    };
 
     return (
         <div className="home-container">
             {/* Header */}
             <div className="header">
                 <h1>My Plants</h1>
-                <div className="icons">
-                    <FaSearch className="icon" />
-                    <FaPlus className="icon" />
+                <div className="more-icons">
+                    <FaSearch className="search-icon" onClick={navToSearch} />
+                    <FaPlus className="search-icon" />
                 </div>
             </div>
 
@@ -38,7 +41,7 @@ const Home = () => {
 
             {/* Popular Plants Section */}
             <div className="section">
-                <div className="section-header">
+                <div className="section-header1">
                     <h2>Popular plants</h2>
                     <span>View all</span>
                 </div>
@@ -54,7 +57,7 @@ const Home = () => {
                     </div>
                     <div className="plant">
                         <div className='plant-mainInfo'>
-                            <div className='plant-health'>Not Well</div>
+                            <div className='plant-health' style={{color:'red'}}>Not Well</div>
                             <div className="plant-info">
                                 <p>Peperomia <br /> Houseplant</p>
                             </div>
@@ -65,12 +68,12 @@ const Home = () => {
             </div>
 
             {/* Categories Section */}
-            <div className="section">
-                <div className="section-header">
+            <div className="sectionBox">
+                <div className="section-header1">
                     <h2>Categories</h2>
                     <span>View all</span>
                 </div>
-                <div className="categories">
+                <div className="categoriesBox">
                     <div className="category-row">
                         <div className="category">
                             <img src={LivingRoom} className="icon1" alt="Living Room Icon" />
