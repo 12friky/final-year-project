@@ -10,6 +10,7 @@ import ProfilePage from './Components/Mobile/Pages/ProfilePage/ProfilePage';
 import SearchPage from './Components/Mobile/Pages/SearchPage/SearchPage';
 import Login from './Components/Mobile/Pages/Account/Login/Login';
 import SignUp from './Components/Mobile/Pages/Account/SignUp/SignUp';
+import ResultPage from './Components/ResultPage/ResultPage';
 
 const App = () => {
     return (
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/saved-plant" element={<SavedPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/search" element={<SearchPage />} />
+            <Route path="/resultpage" element={<ResultPage />} />
         </Routes>
     );
 };
