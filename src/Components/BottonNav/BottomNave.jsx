@@ -7,7 +7,7 @@ const BottomNave = () => {
   const navigate = useNavigate();
 
   const navToHome = () => {
-    navigate('/');
+    navigate('/home');
 };
   const navToExplore = () => {
     navigate('/explore-page');

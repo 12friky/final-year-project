@@ -44,6 +44,18 @@ const CameraPage = () => {
         document.getElementById('file-input').click();
     };
 
+    const handleFileChange = (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                // Navigate to the display page and pass the uploaded image data
+                navigate('/display-photo', { state: { image: reader.result } });
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+
     const capturePhoto = () => {
         const canvas = document.createElement('canvas');
         canvas.width = videoRef.current.videoWidth;
@@ -52,7 +64,7 @@ const CameraPage = () => {
         ctx.drawImage(videoRef.current, 0, 0, canvas.width, canvas.height);
         const imageDataUrl = canvas.toDataURL('image/png');
 
-        // Navigate to the display page and pass the image data
+        // Navigate to the display page and pass the captured image data
         navigate('/display-photo', { state: { image: imageDataUrl } });
     };
 
@@ -73,6 +85,7 @@ const CameraPage = () => {
                     accept="image/*"
                     id="file-input"
                     style={{ display: 'none' }}
+                    onChange={handleFileChange}
                 />
             </div>
         </div>

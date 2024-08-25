@@ -1,0 +1,84 @@
+.result-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.captured-image {
+    height: 220px; /* Slightly larger image height */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant-details {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.identification-heading {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.details-items {
+    margin-bottom: 20px;
+}
+
+.resultItems {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.plant-qualities {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.save-details-btn, .retake-photo-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.save-details-btn {
+    background-color: #28a745;
+}
+
+.save-details-btn:hover {
+    background-color: #218838;
+}
+
+.retake-photo-btn {
+    background-color: #ffc107;
+}
+
+.retake-photo-btn:hover {
+    background-color: #e0a800;
+}

@@ -19,28 +19,34 @@ const DisplayPhotoPage = () => {
     
         if (image) {
             try {
-                const base64Image = image.split(',')[1]; // Extract base64 string from the image
-
-                // Create FormData object to send multipart data
+                const base64Image = image.split(',')[1];
+                const byteCharacters = atob(base64Image);
+                const byteNumbers = new Array(byteCharacters.length);
+                for (let i = 0; i < byteCharacters.length; i++) {
+                    byteNumbers[i] = byteCharacters.charCodeAt(i);
+                }
+                const byteArray = new Uint8Array(byteNumbers);
+                const blob = new Blob([byteArray], { type: 'image/jpeg' }); // Adjust MIME type if needed
+        
                 const formData = new FormData();
-                formData.append('images', base64Image);
-                formData.append('organs', 'leaf'); // Example organ type
-                formData.append('plant_details', JSON.stringify(['common_names', 'wiki_description', 'taxonomy']));
-
-                // Send POST request with multipart form data
+                formData.append('images', blob, 'plant.jpg');
+                formData.append('organs', 'leaf');
+        
                 const response = await axios.post(
                     'https://my-api.plantnet.org/v2/identify/all',
                     formData,
                     {
                         headers: {
                             'Authorization': `Bearer ${import.meta.env.VITE_PLANT_ID_API_KEY}`,
-                            // 'Content-Type': 'multipart/form-data', // No need to set this manually
                         },
                     }
                 );
-    
-                // Navigate to ResultPage with plant details and image
-                navigate('/resultpage', { state: { plantDetails: response.data, image } });
+        
+                if (response.data) {
+                    navigate('/resultpage', { state: { plantDetails: response.data, image } });
+                } else {
+                    setError('No plant details received. Please try again.');
+                }
             } catch (err) {
                 console.error('Error identifying plant:', err.response?.data || err.message);
                 setError('Failed to identify the plant. Please try again.');

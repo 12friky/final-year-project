@@ -1,6 +1,6 @@
 // Mobile.js
 import React from 'react';
-import BottomNave from './Mobile/BottonNav/BottomNave'
+import BottomNave from './BottonNav/BottomNave';
 import Home from './Mobile/Pages/Home/Home';
 
 const Mobile = () => {

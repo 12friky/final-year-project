@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 import './ExplorePage.css'
-import BottonNav from '../../BottonNav/BottomNave'
+import BottomNave from '../../../BottonNav/BottomNave';
 import { FaHotel,FaCouch,FaTree, FaUtensils, FaCalendarAlt } from 'react-icons/fa';
 import Profile from '../../../../images/aloe1.png'
 import Plant from '../../../../images/aloe-vera2.png'
@@ -60,7 +60,7 @@ const ExplorePage = () => {
         </div>
       </div>
 
-      <BottonNav />
+      <BottomNave />
     </div>
   );
 };

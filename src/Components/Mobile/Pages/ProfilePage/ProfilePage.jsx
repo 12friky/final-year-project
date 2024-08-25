@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import BottonNav from '../../BottonNav/BottomNave'
+import BottomNave from '../../../BottonNav/BottomNave';
 import ProfilePic from '../../../../images/aloe-vera2.png'
 import './ProfilePage.css'
 
@@ -30,7 +30,7 @@ const ProfilePage = () => {
         <div className="profile-item">Support</div>
         <div className="profile-item" onClick={LogOut}>Logout</div>
       </div>
-      <BottonNav/>
+      <BottomNave/>
     </div>
   );
 };

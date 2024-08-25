@@ -1,6 +1,6 @@
 import React from 'react'
 import './SavedPage.css'
-import BottonNav from '../../BottonNav/BottomNave'
+import BottomNave from '../../../BottonNav/BottomNave';
 
 import Plant from '../../../../images/aloe-vera2.png'
 
@@ -33,7 +33,7 @@ const SavedPage = () => {
             <p style={{color:'red'}}>Not well</p>
           </div>
         </div>
-        <BottonNav />
+        <BottomNave />
       </div>
     );
   };
